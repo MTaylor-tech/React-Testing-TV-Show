@@ -3,7 +3,6 @@ import axios from "axios";
 import Dropdown from "react-dropdown";
 import parse from "html-react-parser";
 
-
 import { fetchShow } from './api/fetchShow';
 import { formatSeasons } from './utils/formatSeasons';
 
@@ -43,8 +42,7 @@ export default function App() {
         options={Object.keys(seasons)}
         onChange={handleSelect}
         value={selectedSeason || "Select a season"}
-        placeholder="Select an option"
-        data-testid="dropdown"
+        placeholder="Select a season"
       />
       <Episodes episodes={episodes} />
     </div>
